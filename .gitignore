@@ -38,3 +38,6 @@ lib/**.lic
 !chartdir*.dll
 !chartdir*.so
 !chartdir*.dylib
+
+# CMake
+build*
