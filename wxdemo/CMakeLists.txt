@@ -1,2 +1,5 @@
 add_subdirectory(helloworld)
 add_subdirectory(realtimemeasure)
+add_subdirectory(realtimemultithread)
+add_subdirectory(realtimesweep)
+add_subdirectory(realtimeviewport)
