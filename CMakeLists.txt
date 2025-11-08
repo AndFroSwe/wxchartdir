@@ -9,9 +9,10 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 find_package(wxWidgets 3.3.0 REQUIRED core base)
 
 # Chartdir imported files
-add_library(chartdir STATIC IMPORTED)
+add_library(chartdir SHARED IMPORTED)
 set_target_properties(chartdir PROPERTIES
-  IMPORTED_LOCATION ${CMAKE_SOURCE_DIR}/lib/win64/chartdir70.lib
+  IMPORTED_LOCATION ${CMAKE_SOURCE_DIR}/lib/win64/chartdir70.dll
+  IMPORTED_IMPLIB ${CMAKE_SOURCE_DIR}/lib/win64/chartdir70.lib
   INTERFACE_INCLUDE_DIRECTORIES ${CMAKE_SOURCE_DIR}/include
 )
 
